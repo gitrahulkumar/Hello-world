@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  background-image: url("/home/pi/RAHUL/download.png");
+  color: green;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #808080;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+ background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1>My Website</h1>
+ <p>A website created by me.</p>
+
+</div>
+
+<div class="navbar">
+  <a href="/home/pi/RAHUL/webpage.html">Home</a>
+  <a href="/home/pi/RAHUL/Aboutme.html">About</a>
+  <a href="/home/pi/RAHUL/photos.html">Photos</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <img src="/home/pi/RAHUL/download1.png"width="200"height="130">
+    <p>Hello, My name is rahul kumar .I'm from Ludhiana...</p>
+    <h3>Topics</h3>
+   <div class="fakeimg">
+   <a href="/home/pi/RAHUL/Basic.html">Basic</a></div><br>
+    <div class="fakeimg">
+   <a href="#">Medium</a></div><br>
+    <div class="fakeimg">
+   <a href="#">Hard</a></div><br>
+  </div>
+  <div class="main">
+    <h2>C Programming Language</h2>
+    <img src="/home/pi/RAHUL/download.png"width="400"height="200">
+    <p><u><b>C</b></u></p>
+    <p>C is a procedural programming language. It was initially developed by Dennis Ritchie as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, and clean style, these features make C language suitable for system programming like operating system or compiler development.Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript and many other languages is mainly based on C language. C++ is nearly a superset of C language (There are few programs that may compile in C, but not in C++).</p>
+    <br>
+    <h2>Beginning with C programming:</h2>
+    <p><b><u>Structure of C program</u></b></p>
+    <p>After the above discussion, we can formally assess the structure of a C program. By structure, it is meant that any program can be written in this structure only. Writing a C program in any other structure will hence lead to a Compilation Error.<br>
+The structure of a C program is as follows:</p>
+   <img src="/home/pi/RAHUL/StructureOfCprogram.png"width="400"height="200">
+<p>The components of the above structure are:<br>
+1.<b>Header Files Inclusion:</b> The first and foremost component is the inclusion of the Header files in a C program.<br>
+A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.<br>
+<br>Some of C Header files:<br>
+
+stddef.h – Defines several useful types and macros.<br>
+stdint.h – Defines exact width integer types.<br>
+stdio.h – Defines core input and output functions<br>
+stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation<br>
+string.h – Defines string handling functions<br>
+math.h – Defines common mathematical functions.<br>
+<br>
+<b>Syntax to include a header file in C:</b><br>
+   <div class="fakeimg">
+#include <(header_file_name).h></div>
+<br>
+2.<b>Main Method Declaration:</b> The next part of a C program is to declare the main() function. The syntax to declare the main function is:<br>
+<br>
+<b>Syntax to Declare main method:</b><br>
+   <div class="fakeimg">
+int main()<br>
+{}</div>
+</p>
+
+
+3.<b>Variable Declaration:</b> The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.
+  <br><b>Example:</b>
+  <br>
+  <div class="fakeimg">
+int main()
+{
+    int a;
+.
+.</div>
+<br>
+4.<b>Body:</b> Body of a function in C program, refers to the operations that are performed in the functions. It can be anything like manipulations, searching, sorting, printing, etc.
+  <br><b>Example:</b>
+  <br><div class="fakeimg">
+ 	int main()
+	{
+    		int a;
+		printf("%d", a);
+	.
+	.
+</div><br>
+5.<b>Return Statement:</b> The last part in any C program is the return statement. The return statement refers to the returning of the values from a function. This return statement and return value depend upon the return-type of the function. For example, if the return type is void, then there will be no return statement. In any other case, there will be a return statement and the return value will be of the type of the specified return-type.
+<br><b>Example:</b>
+<br>
+  <div class="fakeimg">
+int main()
+{
+    int a;
+
+    printf("%d", a);
+
+    return 0;
+}</div><br>
+2.<b>Writing first program:</b>
+Following is first program in C. <br>
+
+  <div class="fakeimg">
+#include <stdio.h> 
+int main(void) 
+{ 
+    printf("GeeksQuiz"); 
+    return 0; 
+}
+</div> <br>
+Let us analyze the program line by line.<br>
+<b>Line 1: [ #include <stdio.h> ]</b> In a C program, all lines that start with # are processed by preprocessor which is a program invoked by the compiler. In a very basic term, preprocessor takes a C program and produces another C program. The produced program has no lines starting with #, all such lines are processed by the preprocessor. In the above example, preprocessor copies the preprocessed code of stdio.h to our file. The .h files are called header files in C. These header files generally contain declaration of functions. We need stdio.h for the function printf() used in the program.
+<br>
+<b>Line 2 [ int main(void) ]</b> There must to be starting point from where execution of compiled C program begins. In C, the execution typically begins with first line of main(). The void written in brackets indicates that the main doesn’t take any parameter (See this for more details). main() can be written to take parameters also. We will be covering that in future posts.
+The int written before main indicates return type of main(). The value returned by main indicates status of program termination. See this post for more details on return type.
+<br>
+<b>Line 3 and 6: [ { and } ]</b> In C language, a pair of curly brackets define a scope and mainly used in functions and control statements like if, else, loops. All functions must start and end with curly brackets.
+<br>
+<b>Line 4 [ printf(“GeeksQuiz”); ]</b> printf() is a standard library function to print something on standard output. The semicolon at the end of printf indicates line termination. In C, semicolon is always used to indicate end of statement.
+<br>
+<b>Line 5 [ return 0; ]</b> The return statement returns the value from main(). The returned value may be used by operating system to know termination status of your program. The value 0 typically means successful termination.
+<br>
+<br>
+3.<b>How to excecute the above program:</b><br>
+Inorder to execute the above program, we need to have a compiler to compile and run our programs. There are certain online compilers like https://ide.geeksforgeeks.org/, http://ideone.com/ or http://codepad.org/ that can be used to start C without installing a compiler.
+<br><b>Windows:</b> There are many compilers available freely for compilation of C programs like Code Blocks  and Dev-CPP.   We strongly recommend Code Blocks.
+
+<br><b>Linux:</b> For Linux, gcc comes bundled with the linux,  Code Blocks can also be used with Linux.
+</b>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
